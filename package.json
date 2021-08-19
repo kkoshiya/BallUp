@@ -1,0 +1,50 @@
+{
+  "name": "ballup",
+  "version": "1.0.0",
+  "description": "Create teams for pickup basketball games",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "server": "nodemon app.js",
+    "server:debug": "nodemon --inspect app.js",
+    "frontend-install": "npm install --prefix frontend",
+    "frontend": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run frontend\"",
+    "dev-debugger": "concurrently \"npm run server:debug\" \"npm run frontend\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dkirkpatrick99/BallUP.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dkirkpatrick99/BallUP/issues"
+  },
+  "homepage": "https://github.com/dkirkpatrick99/BallUP#readme",
+  "dependencies": {
+    "aws-amplify": "^3.0.10",
+    "axios": "^0.19.2",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "concurrently": "^5.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "google-maps-react": "^2.0.2",
+    "jsonwebtoken": "^8.5.1",
+    "jwt-decode": "^2.2.0",
+    "mongoose": "^5.9.5",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "react-geocode": "^0.2.1",
+    "react-redux": "^7.2.0",
+    "react-scroll": "^1.7.16",
+    "redux-logger": "^3.0.6",
+    "validator": "^12.2.0"
+  },
+  "devDependencies": {
+    "@types/google-maps": "^3.2.2",
+    "nodemon": "^2.0.2"
+  }
+}

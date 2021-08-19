@@ -1,0 +1,235 @@
+/* gray: #84857e */
+/* gold: #a9a471 */
+
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    background-image: url("../../public/net-back.png");
+    background-size: 100%;
+    border: none;
+    max-height: 53px;
+    position: relative;
+}
+.splash-logo {
+    font-family: "Berthold Regular";
+    color: black;
+    transform: translateX(-20px);
+    height: 25px;
+}
+
+#up {
+    color: black;
+}
+
+.navbar-right {
+    font-family: "Berthold Regular";
+    color: black;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.nav-shoes {
+    height: 80px;
+    transform: translateY(12px);
+    z-index: 25;
+}
+
+.navbar-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navbar-left a {
+    text-decoration: none;
+    height: 25px;
+    
+}
+
+.navbar-left a:first-child {
+    height: 80px;
+    z-index: 25;
+}
+
+.navbar-right :last-child{
+     margin-left: 12px;
+     padding-right: 20px;
+}
+
+.navbar-right li {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar-right li:hover {
+    color: #a9a471;
+    cursor: pointer;
+}
+
+
+.hero {
+    z-index: -1;
+    position: absolute;
+    background-image: url(../../public/splash-hero.png);
+    width: 100%;
+    height: 100vh;
+    min-height: 715px;
+    top: 53px;
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+}
+
+.tag-container {
+    width: 100%;
+    height: 500px;
+    z-index: 6;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(30.5%);
+}
+
+.tag {
+    /* transform: translateY(-50%); */
+    left: -3%;
+    color: white;
+    font-family: "Berthold Regular";
+    font-size: 4.8vw;
+    position: relative;
+    transform: translateX(4%);
+    
+}
+
+.sub-tag {
+    transform: translateY(-150%) translateX(2%);
+    right: 4%;
+    color: white;
+    font-family: "Berthold Regular";
+    font-size: 2vw;
+    position: relative;
+}
+
+.tag-list {
+    list-style: none;
+}
+
+.signup-btn {
+    z-index: 3;
+    position: absolute;
+    object-fit: cover;
+    /* transform: translateY(10vh); */
+    font-family: "Berthold Regular";
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    border-radius: 4px;
+    margin-top: 2.7%;
+    outline: none;
+    border: none;
+    width: 150px;
+}
+
+.tag-list {
+    transform: translateY(15vh);
+}
+
+.signup-btn {
+    transform: translateY(25vh) scale(1.2);
+}
+
+.signup-btn:hover {
+    cursor: pointer;
+    background-color: gray;
+}
+
+.navbar-right-loggedin {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-right-loggedin li:hover {
+    color: #a9a471;
+    cursor: pointer;
+}
+
+.navbar-right-loggedin li {
+    list-style: none;
+    text-decoration: none;
+    font-family: "Berthold Regular";
+    font-size: 25px;
+}
+
+.navbar-right-loggedin a {
+    text-decoration: none;
+    color: black;
+    padding: 0%;
+}
+
+.navbar-right-loggedin a:hover {
+    color: #a9a471;
+    cursor: pointer;
+}
+
+.navbar-right-loggedin :last-child{
+     margin-left: 12px;
+     padding-right: 20px;
+}
+
+.navbar-right-loggedin :first-child{
+     padding-right: 0;
+}
+
+input {
+    outline-color: black;
+    outline-width: 1px;
+    font-family: "Berthold Regular";
+    letter-spacing: 1px;
+}
+
+input:focus {
+    outline-style: solid;
+}
+
+input[type=submit] {
+    font-family: "Berthold Regular";
+}
+
+select {
+    font-family: "Berthold Regular";
+    letter-spacing: 1px;
+}
+
+label, button, option {
+    font-family: "Berthold Regular";
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.navbar-b, .hero-b, .tag-b, .sub-tag-b, .signup-btn-b {
+   filter: brightness(45%);
+   transition: .5s;
+}
+.navbar, .hero, .tag, .sub-tag, .signup-btn {
+   transition: .5s;
+}
+
